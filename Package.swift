@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreUIPhotoLibrary",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-1.0.0-beta+20230309134517.xcframework.zip",
-			checksum: "e1def0453cd00028bf774ece145f0c1b174724ac3de8f2ef4410b154a758b4c0"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-1.0.0-beta+20230309142042.xcframework.zip",
+			checksum: "413d4be39f513d12aa20fab7fbdab616371f7fda637abe3220caca595ae611a8"
 		)
 	]
 )
