@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXCoreUIPhotoLibrary",
-	platforms: [.iOS("12.0"), .visionOS("1.0")],
+	platforms: [.iOS("13.0"), .visionOS("1.0")],
 	products: [
 		.library(
 			name: "GXCoreUIPhotoLibrary",
 			targets: ["GXCoreUIPhotoLibraryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.21")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.24")
 	],
 	targets: [
 		.target(name: "GXCoreUIPhotoLibraryWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreUIPhotoLibrary",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-2.2.0-beta.21.xcframework.zip",
-			checksum: "7a400a61635900cb62ce7f5f1782b2fca8a5db3d08bb72e3c3447c5e318152cc"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-2.2.0-beta.24.xcframework.zip",
+			checksum: "fae5026db158d94a46e50c4cc249fe720f081b7466a0a3079ef40edb02bf64a9"
 		)
 	]
 )
