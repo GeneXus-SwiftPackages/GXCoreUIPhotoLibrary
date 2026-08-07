@@ -1,28 +1,28 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
 	name: "GXCoreUIPhotoLibrary",
-	platforms: [.iOS("12.0")],
+	platforms: [.iOS("15.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXCoreUIPhotoLibrary",
 			targets: ["GXCoreUIPhotoLibraryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.1.0")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "4.2.0")
 	],
 	targets: [
 		.target(name: "GXCoreUIPhotoLibraryWrapper",
 				dependencies: [
 					"GXCoreUIPhotoLibrary",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .visionOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreUIPhotoLibrary",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXCoreUIPhotoLibrary-1.1.0.xcframework.zip",
-			checksum: "8ef1fc04166d77117d9b8924d8774a0de1f25495824fc66b20dc856675cfe010"
+			url: "https://pkgs.genexus.dev/iOS/releases/GXCoreUIPhotoLibrary-4.2.0.xcframework.zip",
+			checksum: "4d85696dca83ff02262ceec2d1b0e10083207be3d8d164be9738b0d1c4471a22"
 		)
 	]
 )
