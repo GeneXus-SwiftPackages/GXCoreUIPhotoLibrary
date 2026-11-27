@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXCoreUIPhotoLibraryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "5.1.0-beta.20")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "5.1.0-beta.21")
 	],
 	targets: [
 		.target(name: "GXCoreUIPhotoLibraryWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreUIPhotoLibrary",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-5.1.0-beta.20.xcframework.zip",
-			checksum: "f1fc581ad94f26ffbf701cc36fe6249240ec5ab16fa02fff2586187bee72c354"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreUIPhotoLibrary-5.1.0-beta.21.xcframework.zip",
+			checksum: "8fd1b3d46977c244e1a004b4802f2ebf75e7e5ff30e760956259d06b05c640c7"
 		)
 	]
 )
